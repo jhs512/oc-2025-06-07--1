@@ -40,8 +40,7 @@ a {
 
 .logo {
   width: 200px;
-  height: 100%;
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
@@ -62,7 +61,7 @@ a {
   border-right: 1px solid #497963;
 }
 
-.header__item a {
+.header__link {
   display: flex;
   width: 100%;
   align-items: center;
