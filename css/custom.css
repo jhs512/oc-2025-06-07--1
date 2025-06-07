@@ -1,6 +1,6 @@
 /* reset */
 
-*{
+* {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -9,56 +9,56 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-a{
+a {
   display: block;
   text-decoration: none;
 }
 
 /* Header */
 
-header{
+header {
   position: relative;
   display: flex;
   height: 100px;
   z-index: 100;
 }
 
-.header__nav{
+.header__nav {
   margin-top: 50px;
   margin-left: auto;
 }
 
-.logo{
+.logo {
   width: 200px;
   height: 100%;
   display: inline-flex;
   align-items: center;
 }
 
-.header__menu{
+.header__menu {
   display: flex;
   height: 100%;
 }
-.header__item{
+.header__item {
   position: relative;
   /* border: 1px solid #497963; */
-  width:120px;
+  width: 120px;
   border: 1px solid #497963;
   border-left: 1px solid #497963;
   border-right: 0;
 }
 
-.header__item:last-child{
+.header__item:last-child {
   border-right: 1px solid #497963;
 }
 
-.header__item a{
+.header__item a {
   display: flex;
   width: 100%;
   align-items: center;
@@ -66,7 +66,7 @@ header{
   height: 100%;
 }
 
-.header__submenu{
+.header__submenu {
   position: absolute;
   width: 100%;
   top: 100%;
@@ -74,22 +74,22 @@ header{
   transform: translateX(-50%);
 }
 
-.header__submenu-item a{
+.header__submenu-item a {
   height: 36px;
-  color: #FFF;
+  color: #fff;
 }
 
-.header__submenu-item a:hover{
-  background-color: #FFF;
+.header__submenu-item a:hover {
+  background-color: #fff;
   color: #111;
 }
 
-.header__nav-bg{
+.header__nav-bg {
   /* 투명도 */
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  background-color: #497963 ;
+  background-color: #497963;
   position: absolute;
   top: 100%;
   left: 0;
@@ -97,22 +97,20 @@ header{
   width: 100%;
   height: 200px;
 }
-.header__submenu{
+.header__submenu {
   opacity: 0;
   visibility: hidden;
 }
 
-
-
 .header__nav:hover .header__nav-bg,
-.header__nav:hover .header__submenu{
+.header__nav:hover .header__submenu {
   opacity: 1;
   visibility: visible;
 }
 
-.header__menu > .header__item:hover > a{
+.header__menu > .header__item:hover > a {
   background-color: #497963;
-  color: #FFF;
+  color: #fff;
 }
 
 /* Slide */
@@ -141,66 +139,67 @@ header{
   left: -100% !important; /* 화면 왼쪽 */
 }
 
-.slider__slide.next{
+.slider__slide.next {
   visibility: hidden;
 }
 
 /* Contents */
-.content-wrap{
+.content-wrap {
   display: flex;
   height: 200px;
 }
 
-.content-wrap > div{
+.content-wrap > div {
   flex: 1 0 0; /* 1:1:! */
 }
 
-.notice article{
+.notice article {
   align-items: center;
 }
 
-.notice,.gallery{
+.notice,
+.gallery {
   padding: 16px;
 }
 
 .notice > h2,
-.gallery > h2{
+.gallery > h2 {
   position: relative;
   display: inline-flex;
   padding: 6px 20px;
   font-size: 16px;
   margin-left: 10px;
   background-color: #497963;
-  color: #FFF;
+  color: #fff;
   font-weight: 400;
   z-index: 1;
   margin-bottom: -1px;
 }
 
 .notice ul,
-.gallery ul{
+.gallery ul {
   border: 1px solid #7c8681;
   height: 140px;
   padding: 14px 20px;
 }
 
-.notice ul{
+.notice ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.notice article{
+.notice article {
   display: flex;
 }
 
-.notice article h3{
+.notice article h3 {
   display: block;
   padding: 4px 0;
   font-size: 14px;
 }
 
-.notice article p{
+.notice article p {
   display: block;
   margin-left: 10px;
   font-size: 12px;
@@ -211,7 +210,10 @@ header{
 .modal {
   display: none;
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   justify-content: center;
   align-items: center;
   z-index: 999;
@@ -225,7 +227,10 @@ header{
 /* 어두운 반투명 배경 */
 .modalOverlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -245,32 +250,30 @@ header{
 }
 
 .modal__content h3,
-.modal__content p{
+.modal__content p {
   display: block;
   text-align: center;
 }
 
-.modal__content p{
+.modal__content p {
   margin: 20px 0;
 }
 
-#closeModal{
+#closeModal {
   display: block;
   margin-top: auto;
   padding: 10px;
   border: none;
   font-size: 20px;
   width: 100%;
-  color: #FFF;
+  color: #fff;
   background-color: #497963;
   border-radius: 5px;
   cursor: pointer;
-  
 }
 
-
 /* gallery */
-.gallery ul{
+.gallery ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -278,11 +281,11 @@ header{
   gap: 10px;
 }
 
-.gallery ul > li{
+.gallery ul > li {
   flex: 1 0 0;
 }
 
-.gallery ul li img{
+.gallery ul li img {
   display: block;
   width: 100%;
   object-fit: cover;
@@ -290,31 +293,31 @@ header{
 }
 
 /* banner */
-.banner{
+.banner {
   position: relative;
   cursor: pointer;
 }
-.banner::before{
+.banner::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   opacity: 0;
-  visibility:hidden;
+  visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.3s ease;
 }
 
-.banner:hover::before{
+.banner:hover::before {
   opacity: 1;
-  visibility:visible;
+  visibility: visible;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.banner h2{
+.banner h2 {
   display: block;
   background-color: #497963;
-  color: #FFF;
+  color: #fff;
   padding: 6px 30px;
   border-radius: 5px;
   font-size: 16px;
@@ -325,7 +328,7 @@ header{
   position: absolute;
 }
 
-.banner img{
+.banner img {
   display: block;
   width: 100%;
   height: 100%;
@@ -333,24 +336,24 @@ header{
 
 /* Footer */
 
-.footer-wrap{
+.footer-wrap {
   display: flex;
   height: 100px;
   background-color: #949c98;
 }
 
-.copy{
+.copy {
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.family-site{
+.family-site {
   width: 220px;
 }
 
-.family-site ul{
+.family-site ul {
   display: flex;
   height: 100%;
   justify-content: center;
