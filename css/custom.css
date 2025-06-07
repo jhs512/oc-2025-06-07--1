@@ -1,12 +1,17 @@
 /* reset */
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
+}
+
+html {
   font-family: "맑은 고딕";
   color: #333333;
-  box-sizing: border-box;
 }
 
 body {
